@@ -12,4 +12,5 @@ jobs:
           python-version: "3.13"
       - run: pip install -r requirements.txt
       # Tests run on in-memory SQLite with mocked storage — no secrets needed.
-      - run: pytest -q
+      # `python -m` puts the repo root on sys.path so `controller` imports.
+      - run: python -m pytest -q

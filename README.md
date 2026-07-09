@@ -65,7 +65,7 @@ python -m venv .venv
 
 ### 3. Variables de entorno
 
-Copiá `.env.example` a `.env` y completá los valores:
+Copia `.env.example` a `.env` y completa los valores:
 
 ```ini
 # Base de datos (requerido)
@@ -226,7 +226,7 @@ Flujo estilo smart-TV para un dispositivo físico de reproducción:
 .venv\Scripts\alembic downgrade -1
 ```
 
-Alembic reutiliza el `engine` y `SQLModel.metadata` de la app (fuente única de verdad). `autogenerate` no detecta renombres de columna (los ve como drop+add) — revisá siempre el script generado.
+Alembic reutiliza el `engine` y `SQLModel.metadata` de la app (fuente única de verdad). `autogenerate` no detecta renombres de columna (los ve como drop+add) — revisa siempre el script generado.
 
 ---
 
